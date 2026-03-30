@@ -2,13 +2,18 @@
 import "./app.css";
 import Banner from "./component/Banner/Banner";
 import Nevber from "./component/Navbar/Nevber";
+import Status from "./component/Status/Status";
+import Steps from "./component/Steps/Steps";
 
 export function App() {
   return (
     <>
       <Nevber></Nevber>
       <Banner></Banner>
-      {/* <h1 className="text-2xl font-bold bg-sky-200">B13-assignment-6</h1> */}
+      <Status></Status>
+
+      <Steps></Steps>
+      
     </>
   );
 }

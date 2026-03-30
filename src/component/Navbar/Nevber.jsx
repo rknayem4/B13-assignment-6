@@ -69,7 +69,7 @@ const Nevber = () => {
           </ul>
         </div>
 
-        <div className="navbar-end space-y-4 flex  justify-center items-center">
+        <div className="navbar-end space-y-4 flex ">
 
           {/* <div className="dropdown dropdown-end ">
             <div
@@ -111,15 +111,15 @@ const Nevber = () => {
               </div>
             </div>
           </div> */}
-          <div className=" mx-3 text-2xl  flex justify-end items-center">
-          <FaShoppingCart/>
+          <div className="  text-2xl content-center">
+          <FaShoppingCart />
           </div>
 
           <div className="mx-3 content-center text-2xl">
-            <button>Login</button>
+            <button className="my-auto">Login</button>
           </div>
 
-          <div className="mx-3 content-center">
+          <div className="ml-3 content-center">
             <a className="btn bg-linear-to-r from-[#4f39f6] to-[#9514fa] text-white px-8 rounded-full">Get Started</a>
           </div>
         </div>
