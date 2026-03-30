@@ -2,7 +2,7 @@ import React from "react";
 
 const PricingCard = () => {
   return (
-    <div className=" max-w-350 mx-auto my-6">
+    <div className="max-w-350 mx-auto my-6">
       <div className="text-center space-y-4 my-5 py-3">
         <h2 className="text-4xl font-bold ">Simple, Transparent Pricing</h2>
         <p className="text-gray-600">
@@ -10,7 +10,7 @@ const PricingCard = () => {
         </p>
       </div>
 
-      <div className="flex justify-between gap-3">
+      <div className="  flex  justify-between gap-3">
         <div className="card w-96 bg-base-100 shadow">
           <div className="card-body">
             <div className="">
@@ -19,7 +19,7 @@ const PricingCard = () => {
               <p className=""><span className="font-bold text-4xl">$0</span>/month</p>
             </div>
 
-            <ul className="mt-6 flex flex-col gap-2 text-xs">
+            <ul className="mt-6 flex flex-1 flex-col gap-2 text-xs">
               
               <li>
                 <svg
@@ -100,15 +100,17 @@ const PricingCard = () => {
         </div>
 
         <div className="card w-96 bg-linear-to-r from-[#4f39f6] to-[#9514fa] text-white shadow">
-          <div className="card-body">
-            <span className=" badge  text-center badge-warning">Most Popular</span>
-            <div className="">
+          <div className="card-body ">
+            <div className="flex justify-center relative">
+              <p className=" absolute -top-11 bg-amber-500 text-center px-5 py-2 rounded-full font-semibold">Most Popular</p>
+            </div>
+            <div >
               <h2 className="text-3xl font-bold">Pro</h2>
               <p className="text-sm text-gray-200">Perfect for getting started</p>
               <p className=""><span className="font-bold text-4xl">$29</span>/month</p>
             </div>
 
-            <ul className="mt-6 flex flex-col gap-2 text-xs">
+            <ul className="mt-6 flex flex-1 flex-col gap-2 text-xs">
               <li>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -229,7 +231,7 @@ const PricingCard = () => {
               <p ><span className="text-2xl font-bold">$99</span>/month</p>
             </div>
 
-            <ul className="mt-6 flex flex-col gap-2 text-xs">
+            <ul className="mt-6 flex flex-1 flex-col gap-2 text-xs">
               <li>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

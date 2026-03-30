@@ -5,6 +5,7 @@ import Nevber from "./component/Navbar/Nevber";
 import PricingCard from "./component/PricingCard/PricingCard";
 import Status from "./component/Status/Status";
 import Steps from "./component/Steps/Steps";
+import UpFooter from "./Footer/UpFooter";
 
 export function App() {
   return (
@@ -15,6 +16,7 @@ export function App() {
 
       <Steps></Steps>
       <PricingCard></PricingCard>
+      <UpFooter></UpFooter>
       
     </>
   );
