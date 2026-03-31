@@ -4,9 +4,9 @@ import Cart from "./Cart/Cart";
 import { use, useState } from "react";
 
 const ToolsProducts = ({productPromise}) => {
-  const ProductData = use(productPromise)
-  console.log(ProductData)
+  const productData = use(productPromise)
   const [activeBtn, setActiveBtn] = useState("product");
+  
   return (
     <div className="my-6 py-8  max-w-350 mx-auto">
       <div className="text-center max-w-md mx-auto space-y-4">
@@ -43,7 +43,7 @@ const ToolsProducts = ({productPromise}) => {
         {
           activeBtn == 'cart' 
           ? <Cart></Cart> 
-          : <Products></Products> 
+          : <Products productData={productData}></Products> 
         }
       </div>
     </div>

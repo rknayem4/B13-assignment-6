@@ -1,9 +1,11 @@
 import React from 'react';
+import Card from './Card/Card';
 
-const Products = () => {
+const Products = ({productData}) => {
+  console.log(productData)
   return (
-    <div>
-      <h1 className='text-4xl font-bold'>All Products </h1>
+    <div className="grid grid-cols-3 my-8 gap-6">
+      {productData.map(data  => <Card key={data.id} data={data}></Card>)}
     </div>
   );
 };
