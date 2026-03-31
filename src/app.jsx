@@ -7,6 +7,7 @@ import Status from "./component/Status/Status";
 import Steps from "./component/Steps/Steps";
 import ToolsProduct from "./component/Tools/ToolsProducts";
 import UpFooter from "./component/Footer/UpFooter";
+import { ToastContainer } from "react-toastify";
 
 const fetchProduct = async () => {
   const res = await fetch("/productData.json");
@@ -38,6 +39,7 @@ export function App() {
       <Steps></Steps>
       <PricingCard></PricingCard>
       <UpFooter></UpFooter>
+      <ToastContainer />
     </>
   );
 }
