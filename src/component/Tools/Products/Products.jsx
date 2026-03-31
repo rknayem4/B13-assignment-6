@@ -1,11 +1,19 @@
-import React from 'react';
-import Card from './Card/Card';
+import React from "react";
+import Card from "./Card/Card";
 
-const Products = ({productData}) => {
-  console.log(productData)
+const Products = ({ productData, selected, setSelected, count, setCount }) => {
   return (
     <div className="grid grid-cols-3 my-8 gap-6">
-      {productData.map(data  => <Card key={data.id} data={data}></Card>)}
+      {productData.map((data) => (
+        <Card
+          key={data.id}
+          data={data}
+          selected={selected}
+          setSelected={setSelected}
+          count={count}
+          setCount={setCount}
+        ></Card>
+      ))}
     </div>
   );
 };

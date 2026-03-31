@@ -1,7 +1,7 @@
 import React from "react";
 import { FaShoppingCart } from "react-icons/fa";
 
-const Nevber = () => {
+const Nevber = ({count}) => {
   return (
     <div className=" bg-base-100 shadow-sm">
       <div className="navbar max-w-350 mx-auto">
@@ -70,8 +70,7 @@ const Nevber = () => {
         </div>
 
         <div className="navbar-end space-y-4 flex ">
-
-          {/* <div className="dropdown dropdown-end ">
+          <div className="dropdown dropdown-end ">
             <div
               tabIndex={0}
               role="button"
@@ -93,7 +92,7 @@ const Nevber = () => {
                     d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
                   />{" "}
                 </svg>
-                <span className="badge badge-sm indicator-item">2</span>
+                <span className="badge badge-sm indicator-item">{count}</span>
               </div>
             </div>
             <div
@@ -101,8 +100,8 @@ const Nevber = () => {
               className="card card-compact dropdown-content bg-base-100 z-1 mt-3 w-52 shadow"
             >
               <div className="card-body">
-                <span className="text-lg font-bold">8 Items</span>
-                <span className="text-info">Subtotal: $999</span>
+                <span className="text-lg font-bold"> {count} Items</span>
+                <span className="text-info">Subtotal: $0</span>
                 <div className="card-actions">
                   <button className="btn btn-primary btn-block">
                     View cart
@@ -110,20 +109,22 @@ const Nevber = () => {
                 </div>
               </div>
             </div>
-          </div> */}
-          <div className="  text-2xl content-center">
-          <FaShoppingCart />
           </div>
+          {/* <div className=" relative text-2xl content-center">
+            <FaShoppingCart />
+            <p className="absolute bg-blue-600 rounded-full top-0 left-0 ">{count}</p>
+          </div> */}
 
           <div className="mx-3 content-center text-2xl">
-            <button className="my-auto">Login</button>
+            <button className="my-auto">Login </button>
           </div>
 
           <div className="ml-3 content-center">
-            <a className="btn bg-linear-to-r from-[#4f39f6] to-[#9514fa] text-white px-8 rounded-full">Get Started</a>
+            <a className="btn bg-linear-to-r from-[#4f39f6] to-[#9514fa] text-white px-8 rounded-full">
+              Get Started
+            </a>
           </div>
         </div>
-
       </div>
     </div>
   );

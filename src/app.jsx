@@ -1,4 +1,4 @@
-import { Suspense } from "react";
+import { Suspense, useState } from "react";
 import "./app.css";
 import Banner from "./component/Banner/Banner";
 import Nevber from "./component/Navbar/Nevber";
@@ -15,16 +15,24 @@ const fetchProduct = async () => {
 
 export function App() {
   const productPromise = fetchProduct();
+  const [count, setCount] = useState(0)
   return (
     <>
-      <Nevber></Nevber>
+      <Nevber 
+        count={count}
+        setCount={setCount}
+        ></Nevber>
       <Banner></Banner>
       <Status></Status>
 
       <Suspense
         fallback={<span className="loading loading-spinner loading-xl"></span>}
       >
-        <ToolsProduct productPromise={productPromise}></ToolsProduct>
+        <ToolsProduct 
+        productPromise={productPromise}
+        count={count}
+        setCount={setCount}
+        ></ToolsProduct>
       </Suspense>
 
       <Steps></Steps>

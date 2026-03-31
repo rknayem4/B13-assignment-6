@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 
-const Card = ({ data }) => {
+const Card = ({ data, selected, setSelected, setCount }) => {
   const [isClicked, setIsClicked] = useState(false)
 
   const ClickedBtn = ()=>{
     setIsClicked(true)
-    console.log(data)
+    setSelected([...selected, data])
+    setCount(selected.length + 1)
+    // console.log(data)
   }
 
   return (

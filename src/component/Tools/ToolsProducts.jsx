@@ -1,12 +1,11 @@
-
 import Products from "./Products/Products";
 import Cart from "./Cart/Cart";
 import { use, useState } from "react";
 
-const ToolsProducts = ({productPromise}) => {
-  const productData = use(productPromise)
+const ToolsProducts = ({ productPromise, count, setCount }) => {
+  const productData = use(productPromise);
   const [activeBtn, setActiveBtn] = useState("product");
-  
+  const [selected, setSelected] = useState([]);
   return (
     <div className="my-6 py-8  max-w-350 mx-auto">
       <div className="text-center max-w-md mx-auto space-y-4">
@@ -34,17 +33,28 @@ const ToolsProducts = ({productPromise}) => {
                 : "btn rounded-full w-40"
             }
           >
-            Cart(0)
+            Cart({count})
           </button>
         </div>
       </div>
-            
-      <div> 
-        {
-          activeBtn == 'cart' 
-          ? <Cart></Cart> 
-          : <Products productData={productData}></Products> 
-        }
+
+      <div>
+        {activeBtn == "cart" ? (
+          <Cart
+            selected={selected}
+            setSelected={setSelected}
+            count={count}
+            setCount={setCount}
+          ></Cart>
+        ) : (
+          <Products
+            productData={productData}
+            selected={selected}
+            setSelected={setSelected}
+            count={count}
+            setCount={setCount}
+          ></Products>
+        )}
       </div>
     </div>
   );
