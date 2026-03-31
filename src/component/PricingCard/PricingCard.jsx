@@ -2,7 +2,7 @@ import React from "react";
 
 const PricingCard = () => {
   return (
-    <div className="max-w-350 mx-auto my-6">
+    <div className="max-w-350 mx-auto my-6 ">
       <div className="text-center space-y-4 my-5 py-3">
         <h2 className="text-4xl font-bold ">Simple, Transparent Pricing</h2>
         <p className="text-gray-600">
@@ -10,7 +10,7 @@ const PricingCard = () => {
         </p>
       </div>
 
-      <div className="  flex  justify-between gap-3">
+      <div className="  flex  justify-between max-lg:flex-col items-center gap-3 max-lg:gap-8">
         <div className="card w-96 bg-base-100 shadow hover:scale-105  hover:duration-500">
           <div className="card-body">
             <div className="">

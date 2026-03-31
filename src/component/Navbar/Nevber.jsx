@@ -70,7 +70,7 @@ const Nevber = ({count}) => {
         </div>
 
         <div className="navbar-end space-y-4 flex ">
-          <div className="dropdown dropdown-end ">
+          <div className="dropdown dropdown-end max-sm:hidden">
             <div
               tabIndex={0}
               role="button"
@@ -110,12 +110,9 @@ const Nevber = ({count}) => {
               </div>
             </div>
           </div>
-          {/* <div className=" relative text-2xl content-center">
-            <FaShoppingCart />
-            <p className="absolute bg-blue-600 rounded-full top-0 left-0 ">{count}</p>
-          </div> */}
 
-          <div className="mx-3 content-center text-2xl">
+
+          <div className="mx-3 content-center max-sm:hidden text-2xl">
             <button className="my-auto">Login </button>
           </div>
 

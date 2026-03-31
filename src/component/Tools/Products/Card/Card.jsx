@@ -13,7 +13,7 @@ const Card = ({ data, selected, setSelected, setCount }) => {
   }
 
   return (
-    <div >
+    <div className="mx-auto">
       <div className="card w-96 bg-base-100 shadow-sm">
         <div className="card-body relative">
           <span className="badge  badge-warning absolute right-6">

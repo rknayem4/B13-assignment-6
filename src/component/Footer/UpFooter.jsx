@@ -3,9 +3,9 @@ import React from "react";
 const UpFooter = () => {
   return (
     <div>
-      <div className="w-full py-15 my-4  text-white bg-linear-to-r from-[#4f39f6] to-[#9514fa]">
+      <div className="w-full py-15 mt-4  text-white bg-linear-to-r from-[#4f39f6] to-[#9514fa]">
         <div className="text-center space-y-4">
-          <h3 className="text-3xl font-bold">Ready to Transform Your Workflow?</h3>
+          <h3 className="text-3xl max-md:text-xl font-bold">Ready to Transform Your Workflow?</h3>
           <p className="text-gray-100">
             Join thousands of professionals who are already using Digitools to
             work smarter.Start your free trial today.

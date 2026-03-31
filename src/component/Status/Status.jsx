@@ -3,7 +3,7 @@ import React from 'react';
 const Status = () => {
   return (
     <div className='w-full bg-linear-to-r from-[#4f39f6] to-[#9514fa] py-10 my-4'>
-      <div className=" max-w-350 mx-auto flex justify-between gap-3 my-8 text-white ">
+      <div className=" max-w-350 px-5 mx-auto flex justify-between gap-3 my-8 text-white ">
 
         <div>
         <h4 className='text-5xl font-bold'>50K+</h4>

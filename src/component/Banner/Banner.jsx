@@ -3,12 +3,12 @@ import { CiPlay1 } from "react-icons/ci";
 
 const Banner = () => {
   return (
-    <div className=" max-w-350 mx-auto flex justify-between gap-3 my-8">
-      <div className="content-center  gap-6">
+    <div className=" max-w-350 mx-auto px-2 flex justify-between max-lg:flex-col items-center gap-3 my-8">
+      <div className="content-center  gap-6 p-3">
         <p className="bg-[#E1E7FF] font-semibold my-12 text-[#4F39F6] inline px-6 py-2 rounded-full ">
           New: AI-Powered Tools Available
         </p>
-        <h1 className="text-7xl font-bold my-6">
+        <h1 className="text-7xl max-md:text-3xl font-bold my-6">
           Supercharge Your Digital Workflow
         </h1>
         <p className="text-gray-500 my-5">

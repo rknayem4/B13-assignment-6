@@ -2,7 +2,7 @@ import React from "react";
 
 const Steps = () => {
   return (
-    <div className=" max-w-350 mx-auto py-30 ">
+    <div className="max-w-350 mx-auto py-30 ">
       <div className="text-center space-y-5">
         <h1 className="text-4xl font-bold ">Get Started in 3 Steps</h1>
         <p className="text-gray-600">
@@ -10,8 +10,8 @@ const Steps = () => {
         </p>
       </div>
 
-      <div className="flex justify-between gap-3 my-7">
-        <div className="text-center max-w-95 border border-gray-200 rounded-2xl shadow space-y-3  relative p-6">
+      <div className="flex justify-center max-lg:flex-col items-center gap-3 my-7">
+        <div className="text-center px-4 max-w-95 border border-gray-200 rounded-2xl shadow space-y-3  relative p-6">
           <span className="absolute py-2  px-4 rounded-full bg-linear-to-r from-[#4f39f6] to-[#9514fa] text-white right-1 mx-6  ">
             1
           </span>
