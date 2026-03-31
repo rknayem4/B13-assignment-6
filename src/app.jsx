@@ -1,4 +1,3 @@
-
 import { Suspense } from "react";
 import "./app.css";
 import Banner from "./component/Banner/Banner";
