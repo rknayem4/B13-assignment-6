@@ -1,16 +1,77 @@
-# React + Vite
+# 🚀 AI-Powered Digital Tools Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Description
 
-Currently, two official plugins are available:
+This project is a modern **AI-powered digital tools platform** designed to supercharge productivity and creativity.
+It provides users with access to premium tools like resume builders, cover letter generators, LinkedIn optimizers, and more — all in one place.
+The platform is built with a clean UI, responsive design, and focuses on helping professionals work smarter and faster.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🌐 Live Website
 
-## React Compiler
+👉 https://b13-assignment-6.netlify.app/
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## ⚙️ Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* HTML5
+* CSS3 / Tailwind CSS
+* JavaScript (ES6)
+* React.js
+* API Integration
+* Netlify (Deployment)
+
+---
+
+## ✨ Key Features
+
+### 🔥 1. AI-Powered Productivity Tools
+
+* Smart tools like Resume Builder, Cover Letter AI, and Interview Preparation
+* AI-generated suggestions to improve content quality
+* Helps users create professional documents quickly
+
+### 🎯 2. Premium Digital Product Marketplace
+
+* Curated collection of 200+ premium tools and templates
+* Multiple pricing plans (Starter, Pro, Enterprise)
+* Easy browsing and product selection
+
+### ⚡ 3. User-Friendly & Fast Experience
+
+* Fully responsive design for all devices
+* Smooth navigation and modern UI
+* Quick access to tools with minimal steps
+
+---
+
+## 🛠️ Core Products
+
+* 📄 Resume Pro
+* ✉️ Cover Letter AI
+* 🚀 Career Booster Bundle
+* 🎨 Premium Templates Pack
+* 📊 Job Tracker Pro
+* 💼 LinkedIn Optimizer
+* 🎤 Interview Ace
+
+---
+
+## 📊 Platform Highlights
+
+* 👥 50K+ Active Users
+* 🧰 200+ Premium Tools
+* ⭐ 4.9 User Rating
+
+---
+
+
+## 💡 How It Works
+
+1. Create an account
+2. Choose your desired tools
+3. Start creating instantly
+
+---
+
+
