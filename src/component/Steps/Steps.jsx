@@ -11,7 +11,7 @@ const Steps = () => {
       </div>
 
       <div className="flex justify-center max-lg:flex-col items-center gap-3 my-7">
-        <div className="text-center px-4 max-w-95 border border-gray-200 rounded-2xl shadow space-y-3  relative p-6">
+        <div className="text-center px-4 max-w-95 border border-gray-200 rounded-2xl shadow space-y-3 transform transition duration-500 hover:-translate-y-5 relative p-6">
           <span className="absolute py-2  px-4 rounded-full bg-linear-to-r from-[#4f39f6] to-[#9514fa] text-white right-1 mx-6  ">
             1
           </span>
@@ -22,7 +22,7 @@ const Steps = () => {
           </p>
         </div>
 
-        <div className="text-center max-w-95 border border-gray-200 rounded-2xl shadow space-y-3  relative p-6">
+        <div className="text-center max-w-95 border border-gray-200 rounded-2xl shadow space-y-3 transform transition duration-500 hover:-translate-y-5 relative p-6">
           <span className="absolute py-2  px-4 rounded-full bg-linear-to-r from-[#4f39f6] to-[#9514fa] text-white right-1 mx-6  ">
             2
           </span>
@@ -33,7 +33,7 @@ const Steps = () => {
           </p>
         </div>
 
-        <div className="text-center max-w-95 border border-gray-200 rounded-2xl shadow space-y-3  relative p-6">
+        <div className="text-center max-w-95 border border-gray-200 rounded-2xl shadow space-y-3 transform transition duration-500 hover:-translate-y-5  relative p-6">
           <span className="absolute py-2  px-4 rounded-full bg-linear-to-r from-[#4f39f6] to-[#9514fa] text-white right-1 mx-6  ">
             3
           </span>

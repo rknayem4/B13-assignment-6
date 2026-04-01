@@ -13,8 +13,8 @@ const Card = ({ data, selected, setSelected, setCount }) => {
   };
 
   return (
-    <div className="mx-auto">
-      <div className="card w-96 bg-base-100 shadow-sm">
+    <div className="mx-auto ">
+      <div className="card w-96 bg-base-100 shadow-sm hover:shadow-[#9514fa] transform transition duration-500 hover:-translate-y-3">
         <div className="card-body relative">
           <span className="badge  badge-warning absolute right-6">
             {data.tag === "" ? "No Tag" : data.tag}

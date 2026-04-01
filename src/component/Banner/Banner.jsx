@@ -9,7 +9,10 @@ const Banner = () => {
           New: AI-Powered Tools Available
         </p>
         <h1 className="text-7xl max-md:text-3xl font-bold my-6">
-          Supercharge Your Digital Workflow
+          Supercharge Your <br />
+          <span className="bg-linear-to-r from-indigo-600 to-violet-600 bg-clip-text text-transparent">
+            Digital Workflow
+          </span>
         </h1>
         <p className="text-gray-500 my-5">
           Access premium AI tools, design assets, templates, and productivity

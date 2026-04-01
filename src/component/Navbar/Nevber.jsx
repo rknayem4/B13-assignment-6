@@ -3,7 +3,7 @@ import { FaShoppingCart } from "react-icons/fa";
 
 const Nevber = ({count}) => {
   return (
-    <div className=" bg-base-100 shadow-sm">
+    <div className=" bg-white z-30 shadow-sm sticky top-0 ">
       <div className="navbar max-w-350 mx-auto">
         <div className="navbar-start">
           <div className="dropdown">
@@ -74,7 +74,7 @@ const Nevber = ({count}) => {
             <div
               tabIndex={0}
               role="button"
-              className="btn btn-ghost btn-circle"
+              className="btn mt-6 mr-3.5 btn-ghost btn-circle"
             >
               <div className="indicator text-3xl">
                 <svg
@@ -112,8 +112,8 @@ const Nevber = ({count}) => {
           </div>
 
 
-          <div className="mx-3 content-center max-sm:hidden text-2xl">
-            <button className="my-auto">Login </button>
+          <div className="mx-3 content-center max-sm:hidden  ">
+            <button className="my-auto btn mt-5">Login </button>
           </div>
 
           <div className="ml-3 content-center">

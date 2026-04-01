@@ -11,7 +11,7 @@ const PricingCard = () => {
       </div>
 
       <div className="  flex  justify-between max-lg:flex-col items-center gap-3 max-lg:gap-8">
-        <div className="card w-96 bg-base-100 shadow hover:scale-105  hover:duration-500">
+        <div className="card w-96 bg-base-100 shadow  transform transition duration-500 hover:-translate-y-5  ">
           <div className="card-body">
             <div className="">
               <h2 className="text-3xl font-bold">Starter </h2>
@@ -99,7 +99,7 @@ const PricingCard = () => {
           </div>
         </div>
 
-        <div className="card w-96 bg-linear-to-r from-[#4f39f6] to-[#9514fa] text-white shadow  hover:scale-105">
+        <div className="card w-96 bg-linear-to-r from-[#4f39f6] to-[#9514fa] text-white shadow transform transition duration-500 hover:-translate-y-5 ">
           <div className="card-body ">
             <div className="flex justify-center relative">
               <p className=" absolute -top-11 bg-amber-500 text-center px-5 py-2 rounded-full font-semibold">Most Popular</p>
@@ -223,7 +223,7 @@ const PricingCard = () => {
           </div>
         </div>
 
-        <div className="card w-96 bg-base-100 shadow-sm  hover:scale-105">
+        <div className="card w-96 bg-base-100 shadow-sm transform transition duration-500 hover:-translate-y-5">
           <div className="card-body">
             <div className="">
               <h2 className="text-3xl font-bold">Enterprise </h2>
