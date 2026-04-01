@@ -2,15 +2,15 @@ import React, { useState } from "react";
 import { toast } from "react-toastify";
 
 const Card = ({ data, selected, setSelected, setCount }) => {
-  const [isClicked, setIsClicked] = useState(false)
+  const [isClicked, setIsClicked] = useState(false);
 
-  const ClickedBtn = ()=>{
-    setIsClicked(true)
-    setSelected([...selected, data])
-    setCount(selected.length + 1)
-    toast.success(` ${data.name}Add  to Cart successfully`)
+  const ClickedBtn = () => {
+    setIsClicked(true);
+    setSelected([...selected, data]);
+    setCount(selected.length + 1);
+    toast.success(` ${data.name}Add  to Cart successfully`);
     // console.log(data)
-  }
+  };
 
   return (
     <div className="mx-auto">
@@ -31,8 +31,8 @@ const Card = ({ data, selected, setSelected, setCount }) => {
           </div>
 
           <ul className="mt-6 flex flex-col gap-2 text-xs text-gray-500">
-            {/* {data.features.map((res) => {
-              <li>
+            {data.features.map((feature, i) => (
+              <li key={i}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="size-4 me-2 inline-block text-success"
@@ -47,68 +47,23 @@ const Card = ({ data, selected, setSelected, setCount }) => {
                     d="M5 13l4 4L19 7"
                   />
                 </svg>
-                <span>{res}</span>
-              </li>;
-            })} */}
-            <li>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="size-4 me-2 inline-block text-success"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M5 13l4 4L19 7"
-                />
-              </svg>
-              <span>High-resolution image generation</span>
-            </li>
-            <li>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="size-4 me-2 inline-block text-success"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M5 13l4 4L19 7"
-                />
-              </svg>
-              <span>Customizable style templates</span>
-            </li>
-            <li>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="size-4 me-2 inline-block text-success"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M5 13l4 4L19 7"
-                />
-              </svg>
-              <span>Batch processing capabilities</span>
-            </li>
+
+                <span>{feature}</span>
+              </li>
+            ))}
           </ul>
 
           <div className="mt-6">
-            <button 
-            disabled = {isClicked  ? true : false}
-            onClick={()=> ClickedBtn()}
-            className={isClicked == true ? 'btn-block btn rounded-full' :"btn bg-linear-to-r from-[#4f39f6] to-[#9514fa] text-white btn-block rounded-full"}>
-              {isClicked == true ? 'Added to cart' : 'Buy Now'}
+            <button
+              disabled={isClicked ? true : false}
+              onClick={() => ClickedBtn()}
+              className={
+                isClicked == true
+                  ? "btn-block btn rounded-full"
+                  : "btn bg-linear-to-r from-[#4f39f6] to-[#9514fa] text-white btn-block rounded-full"
+              }
+            >
+              {isClicked == true ? "Added to cart" : "Buy Now"}
             </button>
           </div>
         </div>

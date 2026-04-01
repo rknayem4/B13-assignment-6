@@ -15,7 +15,7 @@ const Steps = () => {
           <span className="absolute py-2  px-4 rounded-full bg-linear-to-r from-[#4f39f6] to-[#9514fa] text-white right-1 mx-6  ">
             1
           </span>
-          <img className="mx-auto mt-8" src="/src/assets/user.png" alt="" />
+          <img className="mx-auto mt-8" src="/user.png" alt="" />
           <h2 className="text-2xl font-bold">Create Account</h2>
           <p className="mb-8">
             Sign up for free in seconds. No credit card required to get started.
@@ -26,7 +26,7 @@ const Steps = () => {
           <span className="absolute py-2  px-4 rounded-full bg-linear-to-r from-[#4f39f6] to-[#9514fa] text-white right-1 mx-6  ">
             2
           </span>
-          <img className="mx-auto mt-8" src="/src/assets/package.png" alt="" />
+          <img className="mx-auto mt-8" src="/package.png" alt="" />
           <h2 className="text-2xl font-bold">Choose Products</h2>
           <p className="mb-8">
             Browse our catalog and select the tools that fit your needs.
@@ -37,7 +37,7 @@ const Steps = () => {
           <span className="absolute py-2  px-4 rounded-full bg-linear-to-r from-[#4f39f6] to-[#9514fa] text-white right-1 mx-6  ">
             3
           </span>
-          <img className="mx-auto mt-8" src="/src/assets/rocket.png" alt="" />
+          <img className="mx-auto mt-8" src="/rocket.png" alt="" />
           <h2 className="text-2xl font-bold">Start Creating</h2>
           <p className="mb-8">
             Download and start using your premium tools immediately.
